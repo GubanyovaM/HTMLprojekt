@@ -1,0 +1,101 @@
+html,
+body {
+    padding: 5px;
+    margin: 0px auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 240, 240);
+    width: 960px;
+    display: flex;
+    flex-direction: column;    
+}
+
+#navbar {
+    text-align: left;
+    background-color: #333;
+    padding: 0px;
+    height: 48px;
+}
+
+#navbar a {
+  text-decoration: none;
+  padding: 10px 1em;
+  color: white;
+}
+
+.nav {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: inline-flex;
+
+}
+
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+    padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+#navbar a.active {
+  background-color: tomato;
+  color: white;
+  
+
+}
+
+#navbar li a {
+ 
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.formright {
+float:right;
+    padding: 14px 16px;
+}
+
+@media (max-width: 800px) {
+  nav .formright {
+    display: none;
+  }
+}
+
+ 
+
+.flex-container {
+    display: inline-flex;
+    flex-flow: row-reverse wrap-reverse;
+    border: solid 1px #000;
+    margin: 5px 5px 5px 0px;
+    flex-direction: column-reverse;
+}
+
+.flex-item {
+    padding: 2px;
+    color: rosybrown;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sidebar {
+   display: inline-flex; 
+       flex-flow: row-reverse wrap-reverse;
+       border: solid 1px #000;
+    margin: 5px 0px 5px 0px;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 164px;
+}
